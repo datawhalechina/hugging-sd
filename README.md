@@ -41,8 +41,8 @@
       - 2.4.1 模型基础知识
       - 2.4.2 Textual Inversion
       - 2.4.2 DreamBooth
-      - 2.4.3 LoRA
-      - 2.4.4 ControlNet
+      - 2.4.3 LoRA（俞笛）
+      - 2.4.4 ControlNet（俞笛）
     - 2.5 插件 (柏特)
     - 2.6 sdxl1.0与应用(沁瑜)
 
