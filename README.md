@@ -49,10 +49,11 @@
 
 **三维视觉**（孝杰）
 - 3 三维生成原理
-    - 3.1 介绍背景和应用（prolificdreamer magic3d ）
+    - 3.1 介绍背景和应用（prolificdreamer magic3d等 ）
     - 3.2 NeRF神经辐射场
     - 3.3 Dreamfusion原理
-    - 3.4 几何与纹理生成
+    - 3.4 Zero123原理
+    - 3.5 几何与纹理生成
 - 4 三维视觉应用
     - 4.1 blender软件使用简介
     - 4.2 趣味应用举例（建模自己的手办并3d打印..）
