@@ -28,42 +28,59 @@
 
 ### 项目规划
 
-**二维视觉**
+**二维生成**
 - 1 stable-diffusion原理简介
-    - 1.1 视觉生成方法 （俞笛）
-    - 1.2 ddpm算法 （孝杰）（俞笛）
+    - 1.1 视觉生成方法（俞笛）
+    - 1.2 ddpm算法（俞笛）
 - 2 stable-diffusion使用指南
-    - 2.1 提示词 （宝华）
-      - 2.1.x 提示词工具（柏特）
-    - 2.2 文生图 （宝华）
-    - 2.3 图生图（包括image2image、inpainting、）
-    - 2.4 模型调优
+    - 2.1 提示词（宝华）
+    - 2.2 文生图（宝华）
+    - 2.3 图生图
+    - 2.4 生成优化
       - 2.4.1 模型基础知识
       - 2.4.2 Textual Inversion
-      - 2.4.2 DreamBooth
-      - 2.4.3 LoRA（俞笛）
-      - 2.4.4 ControlNet（俞笛）
-    - 2.5 插件 (柏特)
+      - 2.4.3 DreamBooth
+      - 2.4.4 LoRA（俞笛）
+      - 2.4.5 ControlNet（俞笛）
+    - 2.5 插件与工具 (柏特)
     - 2.6 sdxl1.0与应用
 
 
-**三维视觉**（孝杰）
+**三维生成**（孝杰）
 - 3 三维生成原理
-    - 3.1 介绍背景和应用（prolificdreamer magic3d等 ）
+    - 3.1 介绍背景和应用
     - 3.2 NeRF神经辐射场
     - 3.3 Dreamfusion原理
     - 3.4 Zero123原理
     - 3.5 几何与纹理生成
 - 4 三维视觉应用
     - 4.1 blender软件使用简介
-    - 4.2 趣味应用举例（建模自己的手办并3d打印..）
+    - 4.2 趣味实践
+
+**视频生成**
+- 5 视频编辑
+- 6 视频生成
 
 **技术局限与未来发展**
-- 5 目前局限
-  - 5.1 二维生成：版权等
-  - 5.2 三维生成：质量有待提升、生成时间长、渲染速度慢等
-- 6 未来发展
-  - 6.1 社区生态（柏特）
-  - 6.2 行业应用
+- 7 目前局限
+  - 二维生成：版权等
+  - 三维生成：质量有待提升、生成时间长、渲染速度慢等
+  - 视频生成：稳定性、连续性等
+- 8 未来发展
+  - 8.1 社区生态（柏特）
+  - 8.2 行业应用
       - 二维场景：营销作图、游戏作画、美图工具等
       - 三维场景：游戏、电影、虚拟资产、vision pro内容等
+      - 视频场景：抖音、b站、直播等
+
+
+### 关注我们
+
+<div align=center>
+<p>扫描下方二维码关注公众号：Datawhale</p>
+<img src="resource/qrcode.jpeg" width = "180" height = "180">
+</div>
+&emsp;&emsp;Datawhale，一个专注于AI领域的学习圈子。初衷是for the learner，和学习者一起成长。目前加入学习社群的人数已经数千人，组织了机器学习，深度学习，数据分析，数据挖掘，爬虫，编程，统计学，Mysql，数据竞赛等多个领域的内容学习，微信搜索公众号Datawhale可以加入我们。
+
+### LICENSE
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
