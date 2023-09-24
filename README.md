@@ -1,7 +1,7 @@
 <div align="center">
 <img  src="./resource/huggingsd.png" width="400">
 <br>
-<font face="Times NewRoman" size=20>HuggingSD</font>
+<font size=20>HuggingSD</font>
 </div>
 
 <p align="center">
