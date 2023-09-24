@@ -1,4 +1,17 @@
-# HuggingSD
+<div align="center">
+<img  src="./resource/huggingsd.png" width="400">
+</div>
+
+---
+
+<p align="center">
+    <font face="times new roma" size=10>HuggingSD</font>
+    <br>
+    <!-- license badge -->
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" />
+    </a>
+</p>
+
 
 ### 项目简介
 
