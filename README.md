@@ -1,7 +1,5 @@
 <div align="center">
 <img  src="./resource/huggingsd.png" width="400">
-<br>
-<font size=20>HuggingSD</font>
 </div>
 
 <p align="center">
@@ -10,6 +8,7 @@
     </a>
 </p>
 
+# HuggingSD
 
 ### 项目简介
 
