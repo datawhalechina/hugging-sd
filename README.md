@@ -83,10 +83,6 @@
       - 三维场景：游戏、数字人、电影、虚拟资产、vision pro内容等
       - 视频场景：抖音、b站、直播等
 
-**提交格式**
-- 图片格式：章节名_图片序列号-图片名称，例如：3-1_1-shape-representation、3-1_2-3d-diffusion。注意单词之间用“-”分隔。
-- 文档格式：不含代码的内容使用readme，参考[3-1 背景及应用.md](./content/3-1%20背景及应用.md)；含代码的内容使用jupyter，参考[1-2 DDPM算法.ipynb](./content/1-2%20DDPM算法.ipynb)。
-- 文件存放：章节内容图片放在[./content/images]；章节涉及到的数据集或模型文件放在[./content/datasets]；项目涉及到的资源放在[./resource]。
 
 ### 关注我们
 
