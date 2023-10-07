@@ -38,12 +38,12 @@
 
 **二维生成**
 - 1 stable-diffusion原理简介
-    - 1.1 [视觉生成方法](./content/1-1%20视觉生成方法.ipynb)
+    - 1.1 视觉生成方法
     - 1.2 [DDPM算法](./content/1-2%20DDPM算法.ipynb)
 - 2 stable-diffusion使用指南
     - 2.1 提示词
     - 2.2 文生图
-    - 2.3 图生图
+    - 2.3 [图生图](./content/2-3%20图生图.ipynb)
     - 2.4 生成优化
       - 2.4.1 [Textual Inversion](./content/2.4.1%20Textural%20Inversion.ipynb)
       - 2.4.2 DreamBooth
