@@ -45,9 +45,9 @@
     - 2.2 文生图
     - 2.3 [图生图](./content/2-3%20图生图.ipynb)
     - 2.4 生成优化
-      - 2.4.1 [Textual Inversion](./content/2.4.1%20Textural%20Inversion.ipynb)
+      - 2.4.1 [Textual Inversion](./content/2-4-1%20Textural%20Inversion.ipynb)
       - 2.4.2 DreamBooth
-      - 2.4.3 LoRA
+      - 2.4.3 [LoRA](./content/2-4-3%20LoRA.ipynb)
       - 2.4.4 ControlNet
     - 2.5 插件与工具
     - 2.6 sdxl1.0与应用
@@ -57,7 +57,7 @@
 - 3 三维生成原理
     - 3.1 [背景及应用](./content/3-1%20背景及应用.md)
     - 3.2 [NeRF神经辐射场](./content/3-2%20NeRF神经辐射场.ipynb)
-    - 3.3 文生3D
+    - 3.3 [文生3D](./content/3-3%20文生3D.md)
     - 3.4 几何与纹理生成
 - 4 三维视觉应用
     - 4.1 blender使用简介
