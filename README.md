@@ -107,15 +107,23 @@
          <a href="https://github.com/KashiwaByte">Bote Huang</a>
          <p>主要贡献者<br>西安电子科技大学本科</p>
       </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table border="0">
+  <tbody>
+    <tr align="center" >
       <td>
          <a href="https://github.com/Fantastic121380"><img width="70" height="70" src="https://github.com/Fantastic121380.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/Fantastic121380">Di Yu</a>
-         <p>贡献者<br>清华大学硕士</p>
+         <p>主要贡献者<br>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/AnSuZeaT"><img width="70" height="70" src="https://github.com/AnSuZeaT.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/AnSuZeaT">Rongkuan Zhou</a>
-         <p>贡献者<br>北理-莫斯科大学硕士</p>
+         <p>主要贡献者<br>北理-莫斯科大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/mxztflow"><img width="70" height="70" src="https://github.com/mxztflow.png?s=40" alt="pic"></a><br>
