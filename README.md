@@ -135,8 +135,8 @@
 </table>
 
 ### 致谢
-特别感谢 [@Sm1les](https://github.com/Sm1les)对本项目的帮助与支持。
-感谢[Tango](https://github.com/it-worker-club)对本项目2-2提供的部分帮助。
+特别感谢 [Sm1les](https://github.com/Sm1les)对本项目的帮助与支持。
+感谢[Tango](https://github.com/it-worker-club)对2-2章节提供的部分帮助；感谢[AnSuZeaT](https://github.com/AnSuZeaT)对6-1章节提供的部分帮助。
 
 ### 关注我们
 
