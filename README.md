@@ -84,23 +84,23 @@
       - 视频场景：抖音、b站、直播等
 
 ### 贡献者
-<table border="0">
+<table border="0" >
   <tbody>
     <tr align="center" >
       <td>
          <a href="https://github.com/xjli360"><img width="70" height="70" src="https://github.com/xjli360.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/xjli360">Xiaojie Li</a> 
-        <p>项目负责人<br>清华大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/joyenjoye"><img width="70" height="70" src="https://github.com/joyenjoye.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/joyenjoye">joye</a> 
-        <p>主要贡献者<br>Data Scientist</p>
+         <p>项目负责人<br>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/guanidine"><img width="70" height="70" src="https://github.com/guanidine.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/guanidine">Letian Zhang</a>
          <p>主要贡献者<br>清华大学硕士</p>
+      </td>
+      <td>
+         <a href="https://github.com/joyenjoye"><img width="70" height="70" src="https://github.com/joyenjoye.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/joyenjoye">joye</a> 
+        <p>主要贡献者<br>Data Scientist</p>
       </td>
       <td>
          <a href="https://github.com/KashiwaByte"><img width="70" height="70" src="https://github.com/KashiwaByte.png?s=40" alt="pic"></a><br>
@@ -119,11 +119,6 @@
          <a href="https://github.com/Fantastic121380"><img width="70" height="70" src="https://github.com/Fantastic121380.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/Fantastic121380">Di Yu</a>
          <p>主要贡献者<br>清华大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/AnSuZeaT"><img width="70" height="70" src="https://github.com/AnSuZeaT.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/AnSuZeaT">Rongkuan Zhou</a>
-         <p>主要贡献者<br>北理-莫斯科大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/mxztflow"><img width="70" height="70" src="https://github.com/mxztflow.png?s=40" alt="pic"></a><br>
