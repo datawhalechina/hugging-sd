@@ -58,10 +58,10 @@
     - 3.1 [背景及应用](./content/3-1%20背景及应用.md)
     - 3.2 [NeRF神经辐射场](./content/3-2%20NeRF神经辐射场.ipynb)
     - 3.3 [文生3D](./content/3-3%20文生3D.md)
-    - 3.4 几何与纹理生成
+    - 3.4 可控3D生成
 - 4 三维视觉应用
-    - 4.1 blender使用简介
-    - 4.2 趣味实践
+    - 4.1 blender入门
+    - 4.2 3D重建与打印
 
 **视频生成**
 - 5 视频编辑
@@ -118,6 +118,11 @@
       <td>
          <a href="https://github.com/Fantastic121380"><img width="70" height="70" src="https://github.com/Fantastic121380.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/Fantastic121380">Di Yu</a>
+         <p>主要贡献者<br>清华大学硕士</p>
+      </td>
+      <td>
+         <a href="https://github.com/flawzhang"><img width="70" height="70" src="https://github.com/flawzhang.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/flawzhang">Di Yu</a>
          <p>主要贡献者<br>清华大学硕士</p>
       </td>
       <td>
