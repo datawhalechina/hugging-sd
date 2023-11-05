@@ -46,7 +46,7 @@
     - 2.3 [图生图](./content/2-3%20图生图.ipynb)
     - 2.4 生成优化
       - 2.4.1 [Textual Inversion](./content/2-4-1%20Textural%20Inversion.ipynb)
-      - 2.4.2 DreamBooth
+      - 2.4.2 [DreamBooth](./content/2-4-2%20DreamBooth.ipynb)
       - 2.4.3 [LoRA](./content/2-4-3%20LoRA.ipynb)
       - 2.4.4 ControlNet
     - 2.5 插件与工具
@@ -122,7 +122,7 @@
       </td>
       <td>
          <a href="https://github.com/flawzhang"><img width="70" height="70" src="https://github.com/flawzhang.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/flawzhang">Di Yu</a>
+         <a href="https://github.com/flawzhang">Qiang Zhang</a>
          <p>主要贡献者<br>清华大学硕士</p>
       </td>
       <td>
