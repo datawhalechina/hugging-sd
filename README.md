@@ -46,11 +46,11 @@
     - 2.3 [图生图](./content/2-3%20图生图.ipynb)
     - 2.4 生成优化
       - 2.4.1 [Textual Inversion](./content/2-4-1%20Textural%20Inversion.ipynb)
-      - 2.4.2 DreamBooth
+      - 2.4.2 [DreamBooth](./content/2-4-2%20DreamBooth.ipynb)
       - 2.4.3 [LoRA](./content/2-4-3%20LoRA.ipynb)
       - 2.4.4 ControlNet
     - 2.5 插件与工具
-    - 2.6 sdxl1.0与应用
+    - 2.6 [sdxl1.0与应用](./content/2-6%20sdxl1.0与应用.ipynb)
 
 
 **三维生成**
@@ -58,10 +58,10 @@
     - 3.1 [背景及应用](./content/3-1%20背景及应用.md)
     - 3.2 [NeRF神经辐射场](./content/3-2%20NeRF神经辐射场.ipynb)
     - 3.3 [文生3D](./content/3-3%20文生3D.md)
-    - 3.4 几何与纹理生成
+    - 3.4 可控3D生成
 - 4 三维视觉应用
-    - 4.1 blender使用简介
-    - 4.2 趣味实践
+    - 4.1 blender入门
+    - 4.2 3D重建与打印
 
 **视频生成**
 - 5 视频编辑
@@ -84,23 +84,23 @@
       - 视频场景：抖音、b站、直播等
 
 ### 贡献者
-<table border="0">
+<table border="0" >
   <tbody>
     <tr align="center" >
       <td>
          <a href="https://github.com/xjli360"><img width="70" height="70" src="https://github.com/xjli360.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/xjli360">Xiaojie Li</a> 
-        <p>项目负责人<br>清华大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/joyenjoye"><img width="70" height="70" src="https://github.com/joyenjoye.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/joyenjoye">joye</a> 
-        <p>主要贡献者<br>Data Scientist</p>
+         <p>项目负责人<br>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/guanidine"><img width="70" height="70" src="https://github.com/guanidine.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/guanidine">Letian Zhang</a>
          <p>主要贡献者<br>清华大学硕士</p>
+      </td>
+      <td>
+         <a href="https://github.com/joyenjoye"><img width="70" height="70" src="https://github.com/joyenjoye.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/joyenjoye">joye</a> 
+        <p>主要贡献者<br>Data Scientist</p>
       </td>
       <td>
          <a href="https://github.com/KashiwaByte"><img width="70" height="70" src="https://github.com/KashiwaByte.png?s=40" alt="pic"></a><br>
@@ -121,9 +121,9 @@
          <p>主要贡献者<br>清华大学硕士</p>
       </td>
       <td>
-         <a href="https://github.com/AnSuZeaT"><img width="70" height="70" src="https://github.com/AnSuZeaT.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/AnSuZeaT">Rongkuan Zhou</a>
-         <p>主要贡献者<br>北理-莫斯科大学硕士</p>
+         <a href="https://github.com/flawzhang"><img width="70" height="70" src="https://github.com/flawzhang.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/flawzhang">Qiang Zhang</a>
+         <p>主要贡献者<br>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/mxztflow"><img width="70" height="70" src="https://github.com/mxztflow.png?s=40" alt="pic"></a><br>
@@ -140,8 +140,8 @@
 </table>
 
 ### 致谢
-特别感谢 [@Sm1les](https://github.com/Sm1les)对本项目的帮助与支持。
-感谢[Tango](https://github.com/it-worker-club)对本项目2-2提供的部分帮助。
+特别感谢 [Sm1les](https://github.com/Sm1les)对本项目的帮助与支持。
+感谢[Tango](https://github.com/it-worker-club)对2-2章节提供的部分帮助；感谢[AnSuZeaT](https://github.com/AnSuZeaT)对6-1章节提供的部分帮助。
 
 ### 关注我们
 
