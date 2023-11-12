@@ -50,7 +50,7 @@
       - 2.4.3 [LoRA](./content/2-4-3%20LoRA.ipynb)
       - 2.4.4 ControlNet
     - 2.5 插件与工具
-    - 2.6 sdxl1.0与应用
+    - 2.6 [sdxl1.0与应用](./content/2-6%20sdxl1.0与应用.ipynb)
 
 
 **三维生成**
