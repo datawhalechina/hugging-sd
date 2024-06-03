@@ -90,58 +90,32 @@
       <td>
          <a href="https://github.com/xjli360"><img width="70" height="70" src="https://github.com/xjli360.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/xjli360">Xiaojie Li</a> 
-         <p>项目负责人<br>清华大学硕士</p>
+         <p>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/guanidine"><img width="70" height="70" src="https://github.com/guanidine.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/guanidine">Letian Zhang</a>
-         <p>主要贡献者<br>清华大学硕士</p>
+         <p>清华大学硕士</p>
       </td>
       <td>
          <a href="https://github.com/joyenjoye"><img width="70" height="70" src="https://github.com/joyenjoye.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/joyenjoye">joye</a> 
-        <p>主要贡献者<br>Data Scientist</p>
+        <p>Data Scientist</p>
       </td>
       <td>
          <a href="https://github.com/KashiwaByte"><img width="70" height="70" src="https://github.com/KashiwaByte.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/KashiwaByte">Bote Huang</a>
-         <p>主要贡献者<br>西安电子科技大学本科</p>
+         <p>西安电子科技大学本科</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-
-<table border="0">
-  <tbody>
-    <tr align="center" >
-      <td>
-         <a href="https://github.com/Fantastic121380"><img width="70" height="70" src="https://github.com/Fantastic121380.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/Fantastic121380">Di Yu</a>
-         <p>主要贡献者<br>清华大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/flawzhang"><img width="70" height="70" src="https://github.com/flawzhang.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/flawzhang">Qiang Zhang</a>
-         <p>主要贡献者<br>清华大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/mxztflow"><img width="70" height="70" src="https://github.com/mxztflow.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/mxztflow">Xiaozhuang Ma</a>
-         <p>主要贡献者<br>西安交通大学硕士</p>
-      </td>
-      <td>
-         <a href="https://github.com/QJieWang"><img width="70" height="70" src="https://github.com/QJieWang.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/QJieWang">Qingjie Wang</a>
-         <p>主要贡献者<br>中国科学技术大学</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 ### 致谢
 特别感谢 [Sm1les](https://github.com/Sm1les)对本项目的帮助与支持。
-感谢[Tango](https://github.com/it-worker-club)对2-2章节提供的部分帮助；感谢[AnSuZeaT](https://github.com/AnSuZeaT)对6-1章节提供的部分帮助。
+感谢[Tango](https://github.com/it-worker-club)对2-2章节提供的帮助；感谢[AnSuZeaT](https://github.com/AnSuZeaT)对6-1章节提供的帮助；
+感谢[Fantastic121380](https://github.com/Fantastic121380)对1-1章节提供的帮助；感谢[flawzhang](https://github.com/flawzhang)、[mxztflow](https://github.com/mxztflow)、[QJieWang](https://github.com/QJieWang)对本项目提供的帮助。
 
 ### 关注我们
 
