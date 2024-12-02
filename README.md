@@ -36,7 +36,7 @@
 
 ### 项目规划【内容持续更新中，欢迎关注～】
 
-#### **一、Stable Diffusion **
+#### **一、Stable Diffusion**
 
 **1.Stable Diffusion原理**
   - 1.1 主流模型结构总述[wip]
