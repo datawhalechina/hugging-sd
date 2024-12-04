@@ -1,5 +1,5 @@
 <div align="center">
-<img  src="./resource/huggingsd.png" width="1000">
+<img  src="./contentresource/huggingsd.png" width="1000">
 </div>
 
 <p align="center">
@@ -36,41 +36,50 @@
 
 ### 项目规划【内容持续更新中，欢迎关注～】
 
-#### **一、Stable Diffusion**
+#### **Chapter 1: Stable Diffusion**
 
 **1.Stable Diffusion原理**
-  - 1.1 主流模型结构总述[wip]
-    - SD1.5
-    - SDXL
-    - Flux
-  - 1.2 视觉生成方法I
-    - [变分自编码器](./docs/chapter1/第1章-视觉生成方法I.md)
+  - 1.1 [总述](./content/Chapter1/Part1-SD/1-1总述.md)
+    - 视觉生成模型历史
+    - 主流模型
+      - SD1.5
+      - SDXL
+      - Flux
+  - 1.2 [视觉生成原理(上)](./content/Chapter1/Part1-SD/1-2视觉生成原理(上).ipynb)
+    - 变分自编码器
     - 生成对抗网络
-  - 1.3 视觉生成方法II
+  - 1.3 [视觉生成原理(下)](./content/Chapter1/Part1-SD/1-3视觉生成原理(下).ipynb)
     - 流式模型
-    - [扩散模型](./content/1-2%20DDPM算法.ipynb)
+    - 扩散模型
       - 训练过程
       - 采样过程
       - 优化方法
+  - 1.4 [SDXL1.0与应用](./content/Chapter1/Part1-SD/1-4sdxl1.0与应用.ipynb)
+  - 1.5 [社区生态](./content/Chapter1/Part1-SD/1-5社区生态.md)
 
-**2.图片生成方法微调模型训练**
-- 2.1 图像生成[wip]
-  - 上手尝试.ipynb[wip]
-  - 构建pipeline的理念
-  - 使用 WebUI / Forge
-  - 使用 ComfyUI
-
-- 2.2 可控生成(以ComfyUI为例)
-  - 条件引导与无条件引导
-  - ControlNet
+**2.图像生成方法**
+- [2.1 提示词](./contentChapter1/Part2-图像生成方法/2-1提示词.md)
+- 2.3 UI生成工具
+  - 2.3.1 使用 WebUI / Forge[wip]
+  - 2.3.2 使用 ComfyUI[wip]
+    - 构建pipeline的理念[wip]
+- 2.4 可控生成
+  - [2.4.1 图生图](./content/Chapter1/Part2-图像生成方法/2-4-1图生图.ipynb)
+  - 2.4.2 ControlNet
+    - [ControlNet 原理](./content/
+Chapter1/Part2-图像生成方法/2-4-2ControlNet原理.ipynb)
+    - [ControlNet [WebUI]](./content/
+Chapter1/Part2-图像生成方法/2-4-2ControlNet[WebUI].ipynb)
   - IPAdapter[wip]
   - ICLight[wip]
-- 2.3 模型微调
-  - 参数微调 dreambooth LoRA
-  - 文本反推 textual-inversion
 
+**3.微调模型训练**
+- 3.1 模型微调原理
+  - 3.1.1 [文本反推 textual-inversion](./content/Chapter1/Part3-微调模型训练/3-1-1Textural_Inversion.ipynb)
+  - 3.1.2 [参数微调 dreambooth](./content/Chapter1/Part3-微调模型训练/3-1-2DreamBooth.ipynb)
+  - 3.1.3 [低秩矩阵 LoRA](./content/Chapter1/Part3-微调模型训练/3-1-3LoRA.ipynb)
 
-4 图片编辑
+**4.图片编辑**
 
 - 4.1 图片反推 DDIM-Inversion
 - 4.2 注意力机制
@@ -78,25 +87,29 @@
   - 自注意力
 - 4.3 基于模型的图片编辑
 
-#### **二、3D Diffusion**
-5 三维生成与编辑
+#### **Chapter 2: 3D Diffusion**
+**5.三维生成与编辑**
 
 - 5.1 三维表征
-  - [表征方法](./content/3-1%20背景及应用.md)
-  - [NeRF/3DGS](./content/3-2%20NeRF神经辐射场.ipynb)
+  - [表征方法](./content/Chapter2/5-1%20背景及应用.md)
+  - [NeRF/3DGS](./content/Chapter2/5-2%20NeRF神经辐射场.ipynb)
 - 5.2 三维生成
-  - [基于2D模型蒸馏](./content/3-3%20文生3D.md)
+  - 基于2D模型蒸馏
   - 基于2D模型训练
 - 5.3 三维编辑
+- 5.4 3D生成
+  - [文生3D](./content/Chapter2/5-3%20文生3D.md)
+  - [可控3D生成](./content/Chapter2/5-4%20可控3D生成.md)
+#### **Chapter 3: Video Diffusion**
+**6.视频生成与编辑**
 
-6 视频生成与编辑
-
-- 6.1 视频生成
-- 6.2 视频编辑
+- 6.1 背景及应用
+- 6.2 文生视频原理
+- 6.3 视频风格迁移
 
 #### **三、社区与生态**
 
-- 7.1 [社区生态]((./content/8-1%20社区生态.md))
+- 7.1 [社区生态](./contentChapter1/Part1-SD/1-5社区生态.md)
 - 7.2 行业应用
   - 二维场景：营销作图、游戏作画、美图工具等
   - 三维场景：游戏、数字人、电影、虚拟资产、vision pro内容等
