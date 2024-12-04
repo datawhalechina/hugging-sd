@@ -66,10 +66,8 @@
 - 2.4 可控生成
   - [2.4.1 图生图](./content/Chapter1/Part2-图像生成方法/2-4-1图生图.ipynb)
   - 2.4.2 ControlNet
-    - [ControlNet 原理](./content/
-Chapter1/Part2-图像生成方法/2-4-2ControlNet原理.ipynb)
-    - [ControlNet [WebUI]](./content/
-Chapter1/Part2-图像生成方法/2-4-2ControlNet[WebUI].ipynb)
+    - [ControlNet 原理](./content/Chapter1/Part2-图像生成方法/2-4-2ControlNet原理.ipynb)
+    - [ControlNet [WebUI]](./content/Chapter1/Part2-图像生成方法/2-4-2ControlNet[WebUI].ipynb)
   - IPAdapter[wip]
   - ICLight[wip]
 
