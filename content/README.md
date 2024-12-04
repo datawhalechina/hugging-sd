@@ -39,43 +39,43 @@
 #### **Chapter 1: Stable Diffusion**
 
 **1.Stable Diffusion原理**
-  - 1.1 [总述](./contect/Chapter1/Part1-SD/1-1总述.md)
+  - 1.1 [总述](./Chapter1/Part1-SD/1-1总述.md)
     - 视觉生成模型历史
     - 主流模型
       - SD1.5
       - SDXL
       - Flux
-  - 1.2 [视觉生成原理(上)](./contect/Chapter1/Part1-SD/1-2视觉生成原理(上).ipynb)
+  - 1.2 [视觉生成原理(上)](./Chapter1/Part1-SD/1-2视觉生成原理(上).ipynb)
     - 变分自编码器
     - 生成对抗网络
-  - 1.3 [视觉生成原理(下)](./contect/Chapter1/Part1-SD/1-3视觉生成原理(下).ipynb)
+  - 1.3 [视觉生成原理(下)](./Chapter1/Part1-SD/1-3视觉生成原理(下).ipynb)
     - 流式模型
     - 扩散模型
       - 训练过程
       - 采样过程
       - 优化方法
-  - 1.4 [SDXL1.0与应用](./contect/Chapter1/Part1-SD/1-4sdxl1.0与应用.ipynb)
-  - 1.5 [社区生态](./contect/Chapter1/Part1-SD/1-5社区生态.md)
+  - 1.4 [SDXL1.0与应用](./Chapter1/Part1-SD/1-4sdxl1.0与应用.ipynb)
+  - 1.5 [社区生态](./Chapter1/Part1-SD/1-5社区生态.md)
 
 **2.图像生成方法**
-- [2.1 提示词](./contect/Chapter1/Part2-图像生成方法/2-1提示词.ipynb)
+- [2.1 提示词](./Chapter1/Part2-图像生成方法/2-1提示词.md)
 - 2.3 UI生成工具
   - 2.3.1 使用 WebUI / Forge[wip]
   - 2.3.2 使用 ComfyUI[wip]
     - 构建pipeline的理念[wip]
 - 2.4 可控生成
-  - [2.4.1 图生图](./contect/Chapter1/Part2-图像生成方法/2-4-1图生图.ipynb)
+  - [2.4.1 图生图](./Chapter1/Part2-图像生成方法/2-4-1图生图.ipynb)
   - 2.4.2 ControlNet
-    - [ControlNet 原理](./contect/Chapter1/Part2-图像生成方法/2-4-2ControlNet原理.ipynb)
-    - [ControlNet [WebUI]](./contect/Chapter1/Part2-图像生成方法/2-4-2ControlNet[WebUI])
+    - [ControlNet 原理](./Chapter1/Part2-图像生成方法/2-4-2ControlNet原理.ipynb)
+    - [ControlNet [WebUI]](./Chapter1/Part2-图像生成方法/2-4-2ControlNet[WebUI].ipynb)
   - IPAdapter[wip]
   - ICLight[wip]
 
 **3.微调模型训练**
 - 3.1 模型微调原理
-  - 3.1.1 [文本反推 textual-inversion](./contect/Chapter1/Part3/3-1-1Textural_Inversion.ipynb)
-  - 3.1.2 [参数微调 dreambooth](./contect/Chapter1/Part3/3-1-2DreamBooth.ipynb)
-  - 3.1.3 [低秩矩阵 LoRA](./contect/Chapter1/Part3/3-1-2LoRA.ipynb)
+  - 3.1.1 [文本反推 textual-inversion](./Chapter1/Part3-微调模型训练/3-1-1Textural_Inversion.ipynb)
+  - 3.1.2 [参数微调 dreambooth](./Chapter1/Part3-微调模型训练/3-1-2DreamBooth.ipynb)
+  - 3.1.3 [低秩矩阵 LoRA](./Chapter1/Part3-微调模型训练/3-1-3LoRA.ipynb)
 
 **4.图片编辑**
 
@@ -89,15 +89,15 @@
 **5.三维生成与编辑**
 
 - 5.1 三维表征
-  - [表征方法](./content/Chapter3/5-1%20背景及应用.md)
-  - [NeRF/3DGS](./content/Chapter3/5-2%20NeRF神经辐射场.ipynb)
+  - [表征方法](./Chapter2/5-1%20背景及应用.md)
+  - [NeRF/3DGS](./Chapter2/5-2%20NeRF神经辐射场.ipynb)
 - 5.2 三维生成
   - 基于2D模型蒸馏
   - 基于2D模型训练
 - 5.3 三维编辑
 - 5.4 3D生成
-  - [文生3D](./content/Chapter3/5-3%20文生3D.md)
-  - [可控3D生成](./content/Chapter3/5-4%20可控3D生成)
+  - [文生3D](./Chapter2/5-3%20文生3D.md)
+  - [可控3D生成](./Chapter2/5-4%20可控3D生成.md)
 #### **Chapter 3: Video Diffusion**
 **6.视频生成与编辑**
 
@@ -107,7 +107,7 @@
 
 #### **三、社区与生态**
 
-- 7.1 [社区生态]((./content/8-1%20社区生态.md))
+- 7.1 [社区生态](./Chapter1/Part1-SD/1-5社区生态.md)
 - 7.2 行业应用
   - 二维场景：营销作图、游戏作画、美图工具等
   - 三维场景：游戏、数字人、电影、虚拟资产、vision pro内容等
