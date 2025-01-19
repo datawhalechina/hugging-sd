@@ -9,7 +9,7 @@
 &emsp;&emsp;本小节介绍变分自编码器（Variational Autoencoder，VAE）。在讲VAE之前，有必要先简单介绍一下自动编码器（Autoencoder，AE），自动编码器是一种无监督学习方法，它的结构由Encoder和Decoder两部分组成。它先将高维的原始数据映射到一个低维特征空间，然后从低维特征学习重建原始的数据，其框架图如图1.1所示。
 
 <div align=center>
-<img width="450" src="img/AE_framework.png"/>
+<img width="450" src="chapter1/img/AE_framework.png"/>
 </div>
 <div align=center>图1.1 自动编码器框架结构图</div>
 
@@ -20,6 +20,7 @@ L_{AE}(\theta,\phi) = \frac{1}{n}\sum_{n}^{i=1}(x^i - f_{\theta }(g_{\phi }(x^i)
 $$
 
 &emsp;&emsp;由于整个过程不需要对数据进行标注，因此AE是一种无监督学习方法。理想状态下，我们想利用Encoder得到对 $x$ 无损的压缩。AE类似于一个类似于一个非线性的PCA，是一个利用神经网络来给复杂数据降维的模型。
+
 
 &emsp;&emsp;重新审视Decoder。 如果 $x_i$ 是一张猫咪的图片，那么 $x_i$ 可以看成是从一个猫咪的分布 $X$ 中采样得到。有趣的是，既然AE可以在Decoder环节从隐变量 $z_i$ 恢复回原始像素空间得到一张与原图很接近的图片，那么如果我给 $z_i$ 加一个扰动能不能也重建成与原图在一个分布 $X$ 下的图片呢？这样模型具有生成能力了！变分自编码器（Variational Autoencoder，VAE），就是要解决这样一个生成问题，它也由Encoder和Decoder两部分组成。假设 $z_i$ 是从一个已知分布 $p_\theta(z)=\mathcal{N} (z|0,I)$ 中采样得到的，那么Decoder可以表示为条件概率 $p_\theta(X|z_i)$ ，它的任务就是从在给定 $z_i$ 的条件下生成对应的 $x_i$。此处 $\theta$ 指的是分布的参数，比如对于高斯分布就是均值和标准差。我们希望找到一个参数 $\theta^*$来最大化生成真实数据的概率：
 
@@ -144,7 +145,7 @@ $$
 如何设计目标函数使得$P_{G}(x;\theta )$ 分布趋近于目标数据集分布 $P_{data}(x)$ 呢？前一章节提到的VAE的方法是采用KL散度来衡量两个分布的相似程度，而GAN则是通过巧妙地设计网络结构，将衡量两个分布相似程度地任务丢给神经网络判别起来判断，其框架图如图1.3所示。
 
 <div align=center>
-<img width="600" src="img/GAN_framework.png"/>
+<img width="600" src="./img/GAN_framework.png"/>
 </div>
 <div align=center>图1.3 对抗生成网络框架结构图</div>
 
