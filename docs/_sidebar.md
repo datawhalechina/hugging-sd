@@ -1,5 +1,5 @@
 
-- [前言](chapter0/chapter0.md)
+[//]: # (- [前言]&#40;chapter0/chapter0.md&#41;)
 - [第1章 视觉生成方法I](chapter1/chapter1.md)
 - [第2章 视觉生成方法II](chapter2/chapter2.md)
 
