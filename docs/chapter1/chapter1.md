@@ -9,7 +9,7 @@
 &emsp;&emsp;本小节介绍变分自编码器（Variational Autoencoder，VAE）。在讲VAE之前，有必要先简单介绍一下自动编码器（Autoencoder，AE），自动编码器是一种无监督学习方法，它的结构由Encoder和Decoder两部分组成。它先将高维的原始数据映射到一个低维特征空间，然后从低维特征学习重建原始的数据，其框架图如图1.1所示。
 
 <div align=center>
-<img width="450" src="./img/AE_framework.png"/>
+<img width="450" src="img/AE_framework.png"/>
 </div>
 <div align=center>图1.1 自动编码器框架结构图</div>
 
@@ -45,7 +45,7 @@ $$
 &emsp;&emsp;所以，Encoder仅需预测该分布的对应的高斯分布参数 $\sigma^2_i$ 和 $\mu_i$ 即可。但是由于存在采样过程，采样过程是离散过程，不能求导。于是，这里采用重参数化技巧（Reparameterization Trick），令$z_i=\mu_i+\sigma^2_i\odot \epsilon_i,\epsilon_i \in \mathcal{N}(0,I)$，$\odot$ 表示逐元素相乘，此时 $z_i$ 依然服从参数为 $\sigma^2_i$ 和 $\mu_i$ 的高斯分布。变分自动编码器的框架如图1.2所示。
 
 <div align=center>
-<img width="550" src="./img/VAE_framework.png"/>
+<img width="550" src="img/VAE_framework.png"/>
 </div>
 <div align=center>图1.2 变分自动编码器框架结构图</div>
 
@@ -81,7 +81,7 @@ Less is more. -- Ludwig Mies van der Rohe
 
 
 <div align=center>
-<img width="600" src="./img/VQVAE_framework.png"/>
+<img width="600" src="img/VQVAE_framework.png"/>
 </div>
 <div align=center>图1.3 向量量化变分自编码器框架结构图</div>
 
@@ -144,7 +144,7 @@ $$
 如何设计目标函数使得$P_{G}(x;\theta )$ 分布趋近于目标数据集分布 $P_{data}(x)$ 呢？前一章节提到的VAE的方法是采用KL散度来衡量两个分布的相似程度，而GAN则是通过巧妙地设计网络结构，将衡量两个分布相似程度地任务丢给神经网络判别起来判断，其框架图如图1.3所示。
 
 <div align=center>
-<img width="600" src="./img/GAN_framework.png"/>
+<img width="600" src="img/GAN_framework.png"/>
 </div>
 <div align=center>图1.3 对抗生成网络框架结构图</div>
 
