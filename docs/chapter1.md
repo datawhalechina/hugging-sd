@@ -4,12 +4,12 @@
 
 ## 1.1 变分自编码器(VAE)
 
-> Just compress everything (压缩即智能) -- Ilya Sutskever
+> Just compress everything. (压缩即智能) -- Ilya Sutskever
 
 &emsp;&emsp;本小节介绍变分自编码器（Variational Autoencoder，VAE）。在讲VAE之前，有必要先简单介绍一下自动编码器（Autoencoder，AE），自动编码器是一种无监督学习方法，它的结构由Encoder和Decoder两部分组成。它先将高维的原始数据映射到一个低维特征空间，然后从低维特征学习重建原始的数据，其框架图如图1.1所示。
 
 <div align=center>
-<img width="450" src="chapter1/img/AE_framework.png"/>
+<img width="450" src="./images/AE_framework.png"/>
 </div>
 <div align=center>图1.1 自动编码器框架结构图</div>
 
@@ -20,7 +20,6 @@ L_{AE}(\theta,\phi) = \frac{1}{n}\sum_{n}^{i=1}(x^i - f_{\theta }(g_{\phi }(x^i)
 $$
 
 &emsp;&emsp;由于整个过程不需要对数据进行标注，因此AE是一种无监督学习方法。理想状态下，我们想利用Encoder得到对 $x$ 无损的压缩。AE类似于一个类似于一个非线性的PCA，是一个利用神经网络来给复杂数据降维的模型。
-
 
 &emsp;&emsp;重新审视Decoder。 如果 $x_i$ 是一张猫咪的图片，那么 $x_i$ 可以看成是从一个猫咪的分布 $X$ 中采样得到。有趣的是，既然AE可以在Decoder环节从隐变量 $z_i$ 恢复回原始像素空间得到一张与原图很接近的图片，那么如果我给 $z_i$ 加一个扰动能不能也重建成与原图在一个分布 $X$ 下的图片呢？这样模型具有生成能力了！变分自编码器（Variational Autoencoder，VAE），就是要解决这样一个生成问题，它也由Encoder和Decoder两部分组成。假设 $z_i$ 是从一个已知分布 $p_\theta(z)=\mathcal{N} (z|0,I)$ 中采样得到的，那么Decoder可以表示为条件概率 $p_\theta(X|z_i)$ ，它的任务就是从在给定 $z_i$ 的条件下生成对应的 $x_i$。此处 $\theta$ 指的是分布的参数，比如对于高斯分布就是均值和标准差。我们希望找到一个参数 $\theta^*$来最大化生成真实数据的概率：
 
@@ -46,7 +45,7 @@ $$
 &emsp;&emsp;所以，Encoder仅需预测该分布的对应的高斯分布参数 $\sigma^2_i$ 和 $\mu_i$ 即可。但是由于存在采样过程，采样过程是离散过程，不能求导。于是，这里采用重参数化技巧（Reparameterization Trick），令$z_i=\mu_i+\sigma^2_i\odot \epsilon_i,\epsilon_i \in \mathcal{N}(0,I)$，$\odot$ 表示逐元素相乘，此时 $z_i$ 依然服从参数为 $\sigma^2_i$ 和 $\mu_i$ 的高斯分布。变分自动编码器的框架如图1.2所示。
 
 <div align=center>
-<img width="550" src="img/VAE_framework.png"/>
+<img width="550" src="./images/VAE_framework.png"/>
 </div>
 <div align=center>图1.2 变分自动编码器框架结构图</div>
 
@@ -72,21 +71,24 @@ $$
 
 对比AE和VAE的两个损失函数能发现，VAE的损失函数像是AE的损失函数的基础上加了KL项作为正则，将Encoder的输出结果空间从较大的空间压缩到了接近后验分布 $ p_\theta(z|x)$ 的一个更小的空间中。
 
+## 1.3 条件变分自编码器（CVAE）
+
+> Potentiality becomes actuality under specific conditions (任何事物的潜能在特定条件下才能成为现实). –- Aristotle
+
+111
+
 ## 1.2 向量量化变分自编码器（VQ-VAE）
 
-Less is more. -- Ludwig Mies van der Rohe
+Less is more (少即是多). -- Ludwig Mies van der Rohe
 
 &emsp;&emsp;前面我们介绍了自动编码器（AE）和变分自动编码器（VAE），它们的隐变量$z$都是连续的，并且整个训练训练过程都是可微的。这样做的好处当然是有利于神经网络训练学习。但是这样连续的设计真的符合自然界中的直觉规律么？比如人类一句话是一系列离散的信号（以单词的组合形成语言）、一张组成猫咪的图片的特征是离散的特征（短毛或者长毛、斑点或者纯色等等）、一段音素是一系列离散的音帧组成。
 
 &emsp;&emsp;所以向量量化变分自编码器（VQ-VAE）就应运而生，通过VQ的方式将隐变量$z$离散化，其框架如图1.3所示。其实从图中可以看出，VQ-VAE的结构更像是AE结构而不是VAE结构，因为其实它是将AE中连续的隐变量$z$变成不连续的"token"隐变量$z$，而$z$中存的是嵌入空间codebook的索引。因此如果用类比自然语言对语句的处理方式的话，VQ就像是图片的$tokenier$。
 
-
 <div align=center>
-<img width="600" src="img/VQVAE_framework.png"/>
+<img width="600" src="./images/VQVAE_framework.png"/>
 </div>
 <div align=center>图1.3 向量量化变分自编码器框架结构图</div>
-
-
 
 那么这种图片的$tokenier$方式是如何实现的呢？首先，将图片$X$经过$Encoder$之后得到输入向量$z_e(x)$，大小为$H\times W\times D$；随后，
 
@@ -106,7 +108,6 @@ $$
 L_{recon} = ||x - Decoder(z_e(x) + sg(z_q(x) - z_e(x)))||_2^2
 $$
 
-
 其中,$sg$表示停止梯度运算的操作。
 
 到此为止，我们可以优化编码器$Encoder$、解码器$Decoder$了。但是由于VQ的不可导并且在我们通过直方估计的方法，实质导致$L_{recon}$上跳过了对嵌入空间$codebook$的优化。由于VQ-VAE的最邻近搜索的设计，因此需要嵌入空间的向量和其对应编码器输出尽可能接近，所以嵌入空间的学习loss为：
@@ -123,7 +124,6 @@ $$
 
 如此，VQVAE总体的损失函数可以写成：
 
-
 $$
 \begin{aligned}
 L = &||x - Decoder(z_e(x) + sg(z_q(x) - z_e(x)))||_2^2 \\
@@ -133,8 +133,7 @@ $$
 
 其中，$\alpha, \beta$用于控制各个loss的比例。
 
-
-## 1.2 对抗生成网络(GAN)
+## 1.3 对抗生成网络(GAN)
 
 > It is not the strongest of the species that survive, but the one most responsive to change（物竞天择，适者生存） -- Charles Darwin
 
@@ -145,7 +144,7 @@ $$
 如何设计目标函数使得$P_{G}(x;\theta )$ 分布趋近于目标数据集分布 $P_{data}(x)$ 呢？前一章节提到的VAE的方法是采用KL散度来衡量两个分布的相似程度，而GAN则是通过巧妙地设计网络结构，将衡量两个分布相似程度地任务丢给神经网络判别起来判断，其框架图如图1.3所示。
 
 <div align=center>
-<img width="600" src="./img/GAN_framework.png"/>
+<img width="600" src="./images/GAN_framework.png"/>
 </div>
 <div align=center>图1.3 对抗生成网络框架结构图</div>
 

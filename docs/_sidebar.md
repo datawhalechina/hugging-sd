@@ -1,7 +1,13 @@
 
 [//]: # (- [前言]&#40;chapter0/chapter0.md&#41;)
-- [第1章 视觉生成方法I](chapter1/chapter1.md)
-- [第2章 视觉生成方法II](chapter2/chapter2.md)
+- [第1章 变分模型](./chapter1.md)
+- [第2章 对抗模型](./chapter2.md)
+- [第3章 流式模型](./chapter2.md)
+- [第4章 扩散模型](./chapter2.md)
+- [第5章 图片生成与编辑](./chapter2.md)
+- [第6章 三维生成与编辑](./chapter2.md)
+- [第7章 视频生成与编辑](./chapter2.md)
+- [第8章 社区与生态](./chapter2.md)
 
 [//]: # (- [第3章 图片生成]&#40;chapter3/chapter3.md&#41;)
 
