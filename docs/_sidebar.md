@@ -1,5 +1,6 @@
 
 [//]: # (- [前言]&#40;chapter0/chapter0.md&#41;)
+- [第0章 序章](./chapter1.md)
 - [第1章 变分模型](./chapter1.md)
 - [第2章 对抗模型](./chapter2.md)
 - [第3章 流式模型](./chapter2.md)
