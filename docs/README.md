@@ -38,6 +38,7 @@
 ### 项目规划【内容持续更新中，欢迎关注～】
 
 本项目初稿在不断更新中，在线阅读: [HuggingVis](https://datawhalechina.github.io/hugging-sd/)
+
 **第一部分 视觉生成方法**
 
 - 1 变分模型
