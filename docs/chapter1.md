@@ -2,14 +2,14 @@
 
 &emsp;&emsp;生成模型是深度学习领域中的一类重要模型，它们能够学习输入数据的潜在分布，并基于这种学习生成与输入数据相似的全新样本。这些模型在图像生成、语音合成、文本生成等多个领域取得了显著的进展。特别是在处理复杂数据结构和多模态数据时，生成模型展现了巨大的潜力。变分自编码器（VAE）、条件变分自编码器（CVAE）和向量量化变分自编码器（VQVAE）是目前应用广泛的几种生成模型。它们不仅为图像生成、数据压缩等任务提供了强大的工具，也为理解潜在空间和生成多样化样本提供了新的视角。VAE通过引入变分推断的方法，解决了传统自编码器在生成模型中的局限性，而CVAE则在VAE的基础上进一步引入了条件变量，使得模型能够在给定条件下生成更加多样化的样本。VQVAE则采用离散化技术，通过向量量化的方式突破了VAE的连续潜在空间的限制，提供了在离散空间中生成数据的能力。虽然这三种模型在方法上有所不同，但它们都在不断推动着生成模型的研究和应用向前发展。在接下来的章节中，我们将深入探讨这三种变分生成模型的原理，揭示它们如何通过对潜在空间的学习与生成过程，推动深度学习在生成任务中的革新。
 
-## 1.1 变分自编码器(VAE)
+## 1.1 变分自编码器（VAE）
 
 > Just compress everything. (压缩即智能) -- Ilya Sutskever
 
 &emsp;&emsp;本小节介绍变分自编码器（Variational Autoencoder，VAE）。在讲VAE之前，有必要先简单介绍一下自动编码器（Autoencoder，AE），自动编码器是一种无监督学习方法，它的结构由Encoder和Decoder两部分组成。它先将高维的原始数据映射到一个低维特征空间，然后从低维特征学习重建原始的数据，其框架图如图1.1所示。
 
 <div align=center>
-<img width="450" src="./images/AE_framework.png"/>
+<img width="450" src="./images/chapter1/AE_framework.png"/>
 </div>
 <div align=center>图1.1 自动编码器框架结构图</div>
 
@@ -45,7 +45,7 @@ $$
 &emsp;&emsp;所以，Encoder仅需预测该分布的对应的高斯分布参数 $\sigma^2_i$ 和 $\mu_i$ 即可。但是由于存在采样过程，采样过程是离散过程，不能求导。于是，这里采用重参数化技巧（Reparameterization Trick），令$z_i=\mu_i+\sigma^2_i\odot \epsilon_i,\epsilon_i \in \mathcal{N}(0,I)$，$\odot$ 表示逐元素相乘，此时 $z_i$ 依然服从参数为 $\sigma^2_i$ 和 $\mu_i$ 的高斯分布。变分自动编码器的框架如图1.2所示。
 
 <div align=center>
-<img width="550" src="./images/VAE_framework.png"/>
+<img width="550" src="./images/chapter1/VAE_framework.png"/>
 </div>
 <div align=center>图1.2 变分自动编码器框架结构图</div>
 
@@ -79,32 +79,29 @@ $$
 
 &emsp;&emsp;具体而言，条件变分自编码器（CVAE）在整体的结构上与VAE差不多，只是在这个过程中加入了条件$y$的控制，如图1.3所示。
 
-
 <div align=center>
-<img width="600" src="./images/CVAE_framework.png"/>
+<img width="600" src="./images/chapter1/CVAE_framework.png"/>
 </div>
 <div align=center>图1.3 条件变分自编码器框架结构图</div>
 
 从图中可以看出，对比VAE的结构，实质上仅在编码器的输入和解码器输出时，添加一个条件控制$y$。在模型训练好之后，仅需要在隐空间中采样一个点叠加上一个随机扰动噪声，并且将条件标签猫也输入解码器中，最后解码器便可生成一只猫的图片。其实，CVAE是将条件标签信息从VAE学习到的分布中解耦出来，从而让模型去专注学习标签类对应的细节特征分布，比如形状、毛发、颜色等等。
 
-同样的CVAE的loss也与VAE的loss相似，只不过概率模型变成了条件概率模型：
+&emsp;&emsp;同样的CVAE的loss也与VAE的loss相似，只不过概率模型变成了条件概率模型：
 
 $$
 L_{\mathrm{CVAE}}(\theta,\phi)=-\mathbb{E}_{\mathbf{z}\sim q_\phi(\mathbf{z}|\mathbf{x},y)}\log p_\theta(\mathbf{x}|\mathbf{z},y)+D_{\mathrm{KL}}(q_\phi(\mathbf{z}|\mathbf{x},y)\|p_\theta(\mathbf{z}|y))
 $$
 
-
-
 ## 1.2 向量量化变分自编码器（VQ-VAE）
 
-Less is more (少即是多). -- Ludwig Mies van der Rohe
+> Less is more (少即是多). -- Ludwig Mies van der Rohe
 
 &emsp;&emsp;前面我们介绍了自动编码器（AE）和变分自动编码器（VAE），它们的隐变量$z$都是连续的，并且整个训练训练过程都是可微的。这样做的好处当然是有利于神经网络训练学习。但是这样连续的设计真的符合自然界中的直觉规律么？比如人类一句话是一系列离散的信号（以单词的组合形成语言）、一张组成猫咪的图片的特征是离散的特征（短毛或者长毛、斑点或者纯色等等）、一段音素是一系列离散的音帧组成。
 
 &emsp;&emsp;所以向量量化变分自编码器（VQ-VAE）就应运而生，通过VQ的方式将隐变量$z$离散化，其框架如图1.3所示。其实从图中可以看出，VQ-VAE的结构更像是AE结构而不是VAE结构，因为其实它是将AE中连续的隐变量$z$变成不连续的"token"隐变量$z$，而$z$中存的是嵌入空间codebook的索引。因此如果用类比自然语言对语句的处理方式的话，VQ就像是图片的$tokenier$。
 
 <div align=center>
-<img width="600" src="./images/VQVAE_framework.png"/>
+<img width="600" src="./images/chapter1/VQVAE_framework.png"/>
 </div>
 <div align=center>图1.3 向量量化变分自编码器框架结构图</div>
 
