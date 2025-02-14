@@ -55,23 +55,26 @@
   - 3.2 改进与优化（RealNVP Glow）
 - 4 扩散模型
 
-  - 4.1 训练过程
-  - 4.2 采样过程
-  - 4.3 优化方法
+  - 4.1 数学基础 ✅
+  - 4.2 加噪与去噪 ✅
+  - 4.3 架构优化
 
 **第二部分 视觉生成原理**
 
 - 5 图片生成与编辑
-  - 主流模型结构（stabledifusion dalle 注意力机制）
-  - 可控生成 （controlnet系列）
-  - 模型微调 （dreambooth LoRA textual-inversion）
-  - 图片反推 （DDIM-Inversion）
+
+  - 5.1 主流模型结构（stabledifusion dalle 注意力机制）
+  - 5.2 可控生成 （controlnet系列）
+  - 5.3 模型微调 （dreambooth LoRA textual-inversion）
+  - 5.4 图片反推 （DDIM-Inversion）
 - 6 三维生成与编辑
-  - 3.1 背景及应用
-  - 3.2 三维表征
-  - 3.3 三维生成
-  - 3.4 三维编辑
+
+  - 6.1 背景及应用
+  - 6.2 三维表征
+  - 6.3 三维生成
+  - 6.4 三维编辑
 - 7 视频生成与编辑
+
   - 7.1
   - 7.2
 

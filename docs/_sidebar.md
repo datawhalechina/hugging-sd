@@ -3,6 +3,8 @@
 - [第0章 序章](./chapter0.md)
 - [第1章 变分模型](./chapter1.md)
 - [第2章 对抗模型](./chapter2.md)
+- [第3章 流模型](./chapter3.md)
+- [第4章 扩散模型](./chapter4.md)
 
 [//]: # (- [第3章 流式模型]&#40;./chapter2.md&#41;)
 
