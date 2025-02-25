@@ -195,7 +195,7 @@ $$
 <div align=center>
 <img width="650" src="./images/chapter4/CG_CFG.png"/>
 </div>
-<div align=center>图4.2 CG和CFG对比总结</div>
+<div align=center>表4.2 CG和CFG对比总结</div>
 
 
 ### 4.4.2 结构优化
